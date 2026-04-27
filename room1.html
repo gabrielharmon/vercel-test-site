@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Hallway</title>
+
+    <style>
+        body {
+            background: linear-gradient(90deg, black, #888888, black);
+            color: white;
+            font-family: monospace;
+            white-space: nowrap;
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+
+        .container {
+            width: 5000px;
+            padding-top: 200px;
+        }
+
+        .text {
+            display: inline-block;
+            margin: 200px;
+            transition: 0.3s;
+        }
+
+        .text:hover {
+            transform: scale(3) rotate(10deg);
+            color: red;
+        }
+
+        .hidden {
+            opacity: 0.01;
+        }
+
+        .hidden:hover {
+            opacity: 1;
+        }
+
+        .return {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            opacity: 0.1;
+        }
+
+        .return:hover {
+            opacity: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <a href="index.html">
+        <div class="return">go back before it changes</div>
+    </a>
+
+    <div class="container">
+
+        <span class="text">walk</span>
+        <span class="text">walk</span>
+        <span class="text">walk</span>
+        <span class="text">walk</span>
+
+        <a href="mirror.html">
+            <span class="text hidden">it is behind you</span>
+        </a>
+
+        <span class="text">walk</span>
+        <span class="text">walk</span>
+
+    </div>
+
+</body>
+
+</html>
